@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 	public float accel = 5f;
 
 	// 获取 碰撞体用于 是否在地面检测 中挂在射灯
-	private Rigidbody2D rb;
+//	private Rigidbody2D rb;
 	private Vector2 input;
 
 	// 发射 检测 人物是否在地面 的射线的长度
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
 
 	void Awake ()
 	{
-		rb = GetComponent<Rigidbody2D> ();
+//		rb = GetComponent<Rigidbody2D> ();
 		_armatureComponent = GetComponent<UnityArmatureComponent> ();
 
 	}
@@ -129,8 +129,8 @@ public class PlayerController : MonoBehaviour
 			_jumpState.timeScale = 2.0f;  // 控制 某个动画状态 的 播放速度
 			_jumpState.autoFadeOutTime = 0.1f;  // 对于限定播放次数的动画, 会自动淡出
 
-			// 3. 添加位移
-			rb.AddForce (new Vector2 (0, accel * 20));
+//			// 3. 添加位移
+//			rb.AddForce (new Vector2 (0, accel * 20));
 		}
 
 	}
@@ -183,6 +183,7 @@ public class PlayerController : MonoBehaviour
 	 */ 
 	private bool PlayerIsOnGround ()
 	{
+
 		float del = 0.5f;
 
 		float width = GetComponent<Collider2D> ().bounds.size.x * 0.5f;
