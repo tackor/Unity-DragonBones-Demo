@@ -86,4 +86,4 @@ private void _jump ()
 
 ```
 
-完整项目地址: <a href='https://github.com/tackor/Unity-DragonBones-Demo.git' target='__blank'>https://github.com/tackor/Unity-DragonBones-Demo.git</a>
+完整项目地址: <a href='https://github.com/tackor/Unity-DragonBones-Demo.git' target='_blank'>https://github.com/tackor/Unity-DragonBones-Demo.git</a>
